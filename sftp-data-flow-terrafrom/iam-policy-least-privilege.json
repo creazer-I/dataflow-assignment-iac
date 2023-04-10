@@ -1,0 +1,170 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": [
+                "s3:GetAccelerateConfiguration",
+                "s3:GetBucketAcl",
+                "s3:GetBucketCors",
+                "s3:GetBucketLogging",
+                "s3:GetBucketObjectLockConfiguration",
+                "s3:GetBucketPolicy",
+                "s3:GetBucketRequestPayment",
+                "s3:GetBucketTagging",
+                "s3:GetBucketVersioning",
+                "s3:GetBucketWebsite",
+                "s3:ListBucket",
+                "s3:ListBucketVersions",
+                "s3:ListMultipartUploadParts",
+                "s3:DeleteObjectTagging",
+                "s3:GetBucketWebsite",
+                "s3:PutObject",
+                "s3:GetLifecycleConfiguration",
+                "s3:GetEncryptionConfiguration",
+                "s3:PutBucketTagging",
+                "s3:DeleteBucket",
+                "s3:GetBucketPublicAccessBlock",
+                "s3:ListAllMyBuckets",
+                "s3:PutBucketPolicy",
+                "s3:CreateBucket",
+                "s3:DeleteBucketPolicy",
+                "s3:GetReplicationConfiguration",
+                "s3:PutEncryptionConfiguration",
+                "s3:PutBucketAcl",
+                "s3:PutBucketVersioning",
+                "s3:PutBucketPublicAccessBlock"
+
+            ],
+            "Resource": [
+                "*"
+            ]
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "kms:CreateGrant",
+                "kms:Decrypt",
+                "kms:DescribeKey",
+                "kms:Encrypt",
+                "kms:GetKeyPolicy",
+                "kms:GetKeyRotationStatus",
+                "kms:ListResourceTags",
+                "kms:TagResource",
+                "kms:CreateKey",
+                "kms:ScheduleKeyDeletion"
+            ],
+            "Resource": [
+                "*"
+            ]
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "transfer:CreateUser",
+                "transfer:DeleteServer",
+                "transfer:DeleteUser",
+                "transfer:DescribeServer",
+                "transfer:DescribeUser",
+                "transfer:CreateServer"
+            ],
+            "Resource": [
+                "*"
+            ]
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "lambda:AddPermission",
+                "lambda:CreateFunction",
+                "lambda:DeleteFunction",
+                "lambda:GetFunction",
+                "lambda:GetFunctionCodeSigningConfig",
+                "lambda:GetPolicy",
+                "lambda:InvokeFunction",
+                "lambda:ListVersionsByFunction",
+                "lambda:PublishVersion",
+                "lambda:RemovePermission",
+                "lambda:UpdateFunctionCode",
+                "lambda:UpdateFunctionConfiguration",
+                "lambda:TagResource"
+            ],
+            "Resource": [
+                "*"
+            ]
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "logs:CreateLogGroup",
+                "logs:DeleteLogGroup",
+                "logs:DescribeLogGroups",
+                "logs:ListTagsLogGroup",
+                "logs:PutRetentionPolicy",
+                "logs:TagResource"
+            ],
+            "Resource": [
+                "*"
+            ]
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "sns:DeleteTopic",
+                "sns:GetSubscriptionAttributes",
+                "sns:GetTopicAttributes",
+                "sns:ListTagsForResource",
+                "sns:Unsubscribe",
+                "sns:CreateTopic",
+                "sns:TagResource",
+                "sns:SetTopicAttributes",
+                "sns:Subscribe"
+
+            ],
+            "Resource": [
+                "*"
+            ]
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "iam:TagRole",
+                "iam:PassRole",
+                "iam:GetRole",
+                "iam:CreateRole",
+                "iam:DeleteRole",
+                "iam:AttachRolePolicy",
+                "iam:DetachRolePolicy",
+                "iam:CreatePolicy",
+                "iam:DeletePolicy",
+                "iam:ListAttachedRolePolicies",
+                "iam:ListInstanceProfilesForRole",
+                "iam:ListRolePolicies",
+                "iam:TagPolicy",
+                "iam:GetPolicy",
+                "iam:GetPolicyVersion",
+                "iam:ListPolicyVersions"
+                
+            ],
+            "Resource": [
+                "*"
+            ]
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "events:DescribeRule",
+                "events:ListTargetsByRule",
+                "events:ListTagsForResource",
+                "events:PutTargets",
+                "events:RemoveTargets",
+                "events:TagResource",
+                "events:PutRule",
+                "events:DeleteRule"
+            ],
+            "Resource": [
+                "*"
+            ]
+        }
+    ]
+}
