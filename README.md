@@ -92,4 +92,4 @@ command to deploy the services in the aws
 
 1. s3 bucket will be encrypted by kms key
 
-2. use [IAM Policy](https://github.com/creazer-I/dataflow-assignment-iac/blob/main/sftp-data-flow-terrafrom/iam-policy-least-privilege.json) whem creating user so it would deploy in a least privilege requirement
+2. use [IAM Policy](https://github.com/creazer-I/dataflow-assignment-iac/blob/main/sftp-data-flow-terrafrom/iam-policy-least-privilege.json) whem creating user so terraform would deploy resources in a least privilege.
